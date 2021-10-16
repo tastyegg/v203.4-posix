@@ -1,40 +1,36 @@
 # Maplestory v203.4 Fork of MapleEllinel
 
-A Java Maplestory server emulator. This is a fork of the v203.4 repo [MapleEllinel](https://forum.ragezone.com/f427/mapleellinel-v203-4-based-swordie-1160913/) by Mechaviv and has since been worked on by Poki.
+A Java Maplestory server emulator for POSIX systems (compile/launch scripts included).
+This is a fork of [pokiuwu's v203.4 repo](https://github.com/pokiuwu/v203.4). It's mostly a dead-end, so I won't be continuing this.
 
 ## Installation
-- Proceed to server-setup-guide.
-- Follow the steps accordingly to the steps given in the discord.
-- Download and build the given [AuthHook](https://github.com/pokiuwu/AuthHook-v203.4) in Microsoft Visual Studio.
-- Drag the output file from the build (ijl15.dll) into your v203.4 Maplestory directory and run a batch file with the following command `MapleStory.exe WebStart admin 8.31.99.141 8484`
-- You should be good to go! :octocat:
+- Download the git to a usable directory.
+- Use [WzDumper v1.9.2](https://github.com/Xterminatorz/WZ-Dumper/releases/tag/1.9.2) against a [v203.4 client](#client-installation).
+- Upload to a server (i.e. OracleCloud ARM instance) using something like Filezilla.
+- Run the compile.sh (on JDK 11, this uses javac: there should only be warnings)
+- Make a dat folder.
+- Run the launch.sh (on first-run, it will generate DAT files)
+- Open ports 8484 and 8585-8587 on the server
 
 ## Client Installation
-
-- v203.4 Client Download: https://mega.nz/folder/ZnpliaBI#FHc4hqppv6Ustc3zTtSADQ
-
-                                     ----- OR -----
-
+For a v203.4 client, use the Steam Depot Downloader (since Steam archieves Maplestory clients).
 - Download via [Depot Downloader](https://github.com/SteamRE/DepotDownloader).
   - App 216150 
   - Depot 216151 
-  - Manifest 116526942226572538 
-- Rest of Steps to be added by Poki.
+  - Manifest 116526942226572538
+- Download and build [pokiuwu's AuthHook](https://github.com/pokiuwu/AuthHook-v203.4) in Microsoft Visual Studio. (this will require an IP change for non-localhost clients, and, if needed, ports)
+- Drag the output file from the build (ijl15.dll) into your v203.4 Maplestory directory
+- Make a batch file with the following command `MapleStory.exe WebStart admin 8.31.99.141 8484` (change 'admin' to another account, as needed)
+- Run the batch file.
 
-
-- Setup guide https://docs.google.com/document/d/1BT0IEIUhEIrS9XWISzKcXiSY89PnACYBHnoNI7gIom8/edit?usp=sharing
-
-## Noteable Changes
-- A decent amount of packets fixed (err 38)
-- Threading issues
-- Stability fixes, that the original v203.4 lacked
+## Shitty Issues with no hope of fixing
+- Slow startup/login connection (up to loading the character - the world/channel runs ok)
+- Some unimplemented NPC scripts (mostly event characters, I think)
+- [Empty Cash Shop and some newer NPC shops](https://github.com/pokiuwu/v203.4/issues/7)
+- Unknown Packets (some may crash the client)
 
 ## Tech Stack
-- [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [MySQL](https://dev.mysql.com/downloads/workbench/) & [WAMP](https://www.wampserver.com/en/)
-- Github (public version control)
-- [IntelliJ](https://www.jetbrains.com/idea/)
-- [WzDumper v1.9.2](https://github.com/Xterminatorz/WZ-Dumper/releases/tag/1.9.2)
+- Java 11
 
 ## Credits
-- Notable Credits: Mechaviv
+- Notable Credits: Mechaviv, Pokiuwu
