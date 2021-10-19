@@ -25,10 +25,9 @@ For a v203.4 client, use the Steam Depot Downloader (since Steam archieves Maple
 - Run the batch file.
 
 ## Shitty Issues with no hope of fixing
-- Slow startup/login connection (feels slower than the vanilla game)
+- [Empty Cash Shop and some newer NPC shops](https://github.com/pokiuwu/v203.4/issues/7) (probably missing an InHeader packet 604)
 - Some unimplemented NPC scripts (mostly event characters, I think)
-- [Empty Cash Shop and some newer NPC shops](https://github.com/pokiuwu/v203.4/issues/7)
-- Unknown Packets (some may crash the client)
+- Missing packets for Rune Action
 
 ## Tech Stack
 - Java 11
