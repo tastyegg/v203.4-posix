@@ -8,6 +8,7 @@ This is a fork of [pokiuwu's v203.4 repo](https://github.com/pokiuwu/v203.4). It
 - Use [WzDumper v1.9.2](https://github.com/Xterminatorz/WZ-Dumper/releases/tag/1.9.2) against a [v203.4 client](#client-installation).
 - Upload to a server (i.e. OracleCloud ARM instance) using something like Filezilla.
 - Run the compile.sh (on JDK 11, this uses javac: there should only be warnings)
+- Copy hibernate.cfg.xml and log4j.properties to the generated bin folder.
 - Make a dat folder.
 - Run the launch.sh (on first-run, it will generate DAT files)
 - Open ports 8484 and 8585-8587 on the server
