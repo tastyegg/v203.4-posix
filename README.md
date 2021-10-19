@@ -25,7 +25,7 @@ For a v203.4 client, use the Steam Depot Downloader (since Steam archieves Maple
 - Run the batch file.
 
 ## Shitty Issues with no hope of fixing
-- Slow startup/login connection (up to loading the character - the world/channel runs ok)
+- Slow startup/login connection (feels slower than the vanilla game)
 - Some unimplemented NPC scripts (mostly event characters, I think)
 - [Empty Cash Shop and some newer NPC shops](https://github.com/pokiuwu/v203.4/issues/7)
 - Unknown Packets (some may crash the client)
