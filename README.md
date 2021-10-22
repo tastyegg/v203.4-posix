@@ -1,7 +1,7 @@
 # Maplestory v203.4 Fork of MapleEllinel
 
 A Java Maplestory server emulator for POSIX systems (compile/launch scripts included).
-This is a fork of [pokiuwu's v203.4 repo](https://github.com/pokiuwu/v203.4). It's mostly a dead-end, so I won't be continuing this.
+This is a fork of [pokiuwu's v203.4 repo](https://github.com/pokiuwu/v203.4). It's still a very incomplete upgrade from Swordie v176.
 
 ## Installation
 - Download the git to a usable directory.
