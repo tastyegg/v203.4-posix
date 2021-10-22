@@ -27,8 +27,8 @@ For a v203.4 client, use the Steam Depot Downloader (since Steam archieves Maple
 ## Shitty Issues with no hope of fixing
 - [Empty Cash Shop and some newer NPC shops](https://github.com/pokiuwu/v203.4/issues/7) (probably missing an InHeader packet 604)
 - Some unimplemented NPC scripts (mostly event characters, I think)
-- Missing packets for Rune Action (will break client)
-- Beginner Adventurer quest has no quest drop (can't get to Job Change map)
+- Missing packets for Rune Action (will break client - probably got shifted in the upgrade)
+- Beginner Adventurer quest has no quest drop (can't get to Job Change map - adventurer revamp stuff)
 
 ## Tech Stack
 - Java 11
